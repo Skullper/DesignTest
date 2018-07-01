@@ -37,7 +37,6 @@ class FeedActivity : AppCompatActivity(), ViewPager.OnPageChangeListener {
         //Rest of the screen content
         tab_layout.getTabAt(1)?.select()
         initPager()
-        view_pager.setCurrentItem(1, true)
         view_pager_indicator.setupWithViewPager(view_pager)
         view_pager_indicator.addOnPageChangeListener(this)
         initFeed()
@@ -82,6 +81,11 @@ class FeedActivity : AppCompatActivity(), ViewPager.OnPageChangeListener {
         rv_feed.setHasFixedSize(true)
         val items = generateFeed()
         rv_feed.adapter = object : RecyclerView.Adapter<FeedViewHolder>() {
+
+            override fun getItemId(position: Int): Long = position.toLong()
+
+            override fun getItemViewType(position: Int): Int = position
+
             override fun onCreateViewHolder(parent: ViewGroup, viewType: Int)
                     : FeedViewHolder = FeedViewHolder(parent.inflate(R.layout.item_feed))
 

@@ -1,83 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:tools="http://schemas.android.com/tools"
-	android:layout_width="match_parent" android:layout_height="match_parent"
-	android:background="@color/colorPrimary"
-	android:gravity="center"
-	android:orientation="vertical"
-	tools:ignore="LabelFor">
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
 
-	<TextView
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:layout_gravity="center_horizontal"
-		android:layout_marginBottom="@dimen/auth_content_margin"
-		android:text="@string/auth_title"
-		android:textColor="@color/colorWhite"
-		android:textSize="@dimen/auth_title_text_size"/>
-
-	<TextView
-		style="@style/AuthLabelStyle"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:text="@string/auth_label_username"/>
-
-	<EditText
-		style="@style/AuthEditTextStyle"
-		android:inputType="text"
-		android:maxLength="@integer/username_length"
-		tools:text="Some user name"/>
-
-	<TextView
-		style="@style/AuthLabelStyle"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:layout_marginTop="@dimen/auth_between_margin"
-		android:text="@string/auth_label_email"/>
-
-	<EditText
-		style="@style/AuthEditTextStyle"
-		android:inputType="textEmailAddress"
-		tools:text="some@email.com"/>
-
-	<TextView
-		style="@style/AuthLabelStyle"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:layout_marginTop="@dimen/auth_between_margin"
-		android:text="@string/auth_label_pass"/>
-
-	<EditText
-		style="@style/AuthEditTextStyle"
-		android:inputType="textPassword"
-		tools:text="asdsadasd"/>
-
-	<TextView
-		style="@style/AuthLabelStyle"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:layout_marginTop="@dimen/auth_between_margin"
-		android:text="@string/auth_label_pass_confirm"/>
-
-	<EditText
-		style="@style/AuthEditTextStyle"
-		android:inputType="textPassword"
-		tools:text="asdsadasd"/>
-
-	<Button
-		style="@style/AuthButtonStyle"
+	<ImageView
 		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:layout_marginTop="@dimen/auth_content_margin"
-		android:text="@string/auth_btn_next"/>
+		android:layout_height="match_parent"
+		android:scaleType="centerCrop"
+		android:src="@drawable/bg_mountain"/>
+
+	<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_gravity="center"
+		android:background="@color/colorPrimaryAlpha"
+		android:gravity="center"
+		android:orientation="vertical"
+		tools:ignore="LabelFor">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginBottom="@dimen/auth_content_margin"
+			android:text="@string/auth_title"
+			android:textColor="@color/colorWhite"
+			android:textSize="@dimen/auth_title_text_size"/>
+
+		<!--Можна було б зробити кастомні вʼю, що не копіювати TextView+EditText,
+		але в завданні було просто верстка-->
+		<TextView
+			style="@style/AuthLabelStyle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/auth_label_username"/>
+
+		<EditText
+			style="@style/AuthEditTextStyle"
+			android:inputType="text"
+			android:maxLength="@integer/username_length"
+			tools:text="Some user name"/>
+
+		<TextView
+			style="@style/AuthLabelStyle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/auth_between_margin"
+			android:text="@string/auth_label_email"/>
+
+		<EditText
+			style="@style/AuthEditTextStyle"
+			android:inputType="textEmailAddress"
+			tools:text="some@email.com"/>
+
+		<TextView
+			style="@style/AuthLabelStyle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/auth_between_margin"
+			android:text="@string/auth_label_pass"/>
+
+		<EditText
+			style="@style/AuthEditTextStyle"
+			android:inputType="textPassword"
+			tools:text="asdsadasd"/>
+
+		<TextView
+			style="@style/AuthLabelStyle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/auth_between_margin"
+			android:text="@string/auth_label_pass_confirm"/>
+
+		<EditText
+			style="@style/AuthEditTextStyle"
+			android:inputType="textPassword"
+			tools:text="asdsadasd"/>
+
+		<Button
+			style="@style/AuthButtonStyle"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/auth_content_margin"
+			android:text="@string/auth_btn_next"/>
+
+	</LinearLayout>
+
+	<include
+		android:id="@+id/toolbar"
+		layout="@layout/widget_toolbar"/>
 
 	<TextView
 		android:id="@+id/tv_auth_label_sign_in"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:layout_marginTop="@dimen/layout_margin_2x"
+		android:layout_gravity="bottom"
+		android:layout_marginBottom="@dimen/layout_margin"
 		android:fontFamily="@font/font_light"
 		android:gravity="center"
 		android:text="@string/auth_sign_in_label"
 		android:textColor="@color/colorWhite"/>
-</LinearLayout>
+</FrameLayout>

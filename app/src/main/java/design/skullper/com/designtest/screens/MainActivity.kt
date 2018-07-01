@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         R.id.btn_main_first -> startActivity<AuthActivity>()
         R.id.btn_main_sec -> startActivity<FeedActivity>()
         R.id.btn_main_third -> startActivity<ProfileActivity>()
-        R.id.btn_main_fourth -> TODO()
+        R.id.btn_main_fourth -> startActivity<TimelineActivity>()
         else -> throw IllegalArgumentException("Wrong button id")
     }
 }

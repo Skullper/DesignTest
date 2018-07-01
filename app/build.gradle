@@ -40,4 +40,5 @@ dependencies {
     implementation "org.jetbrains.anko:anko-commons:${versions.anko}"
     //views
     implementation 'com.github.vivchar:ViewPagerIndicator:1.1.0'
+    implementation 'com.github.adityagohad:HorizontalPicker:1.0.1'
 }

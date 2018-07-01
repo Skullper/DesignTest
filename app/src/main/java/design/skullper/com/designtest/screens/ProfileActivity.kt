@@ -30,8 +30,8 @@ class ProfileActivity : AppCompatActivity() {
         supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_menu)
         supportActionBar?.title = ""
         tv_toolbar_title.text = "Profile"
-        val semiTransparentGrey = Color.argb(155, 155, 155, 235)
-        iv_profile_cover.setColorFilter(semiTransparentGrey, PorterDuff.Mode.SRC_ATOP)
+        val semiTransparentBlue = Color.argb(155, 155, 155, 235)
+        iv_profile_cover.setColorFilter(semiTransparentBlue, PorterDuff.Mode.SRC_ATOP)
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {

@@ -15,6 +15,10 @@
 	<dimen name="auth_content_margin">50dp</dimen>
 	<dimen name="auth_between_margin">30dp</dimen>
 
+	<!--Timeline-->
+	<dimen name="timeline_photo_size">56dp</dimen>
+	<dimen name="timeline_photo_padding">2dp</dimen>
+
 	<!--Text sizes-->
 	<dimen name="auth_title_text_size">24sp</dimen>
 	<dimen name="auth_label_text_size">12sp</dimen>

@@ -27,6 +27,9 @@
 
 		<activity android:name=".screens.FeedActivity"
 			android:screenOrientation="portrait"/>
+
+		<activity android:name=".screens.TimelineActivity"
+			android:screenOrientation="portrait"/>
     </application>
 
 </manifest>

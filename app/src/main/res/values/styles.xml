@@ -29,6 +29,7 @@
 	<style name="AuthLabelStyle">
 		<item name="android:fontFamily">@font/font_light</item>
 		<item name="android:textColor">@color/colorWhite</item>
+		<item name="android:layout_marginBottom">4dp</item>
 		<item name="android:textSize">@dimen/auth_label_text_size</item>
 	</style>
 
@@ -61,5 +62,11 @@
 
 	<style name="TabTextAppearance" parent="TextAppearance.Design.Tab">
 		<item name="textAllCaps">false</item>
+	</style>
+
+	<style name="TextStyleTime">
+		<item name="android:textSize">12sp</item>
+		<item name="android:textColor">@color/colorSecondaryText</item>
+		<item name="android:fontFamily">@font/font_light</item>
 	</style>
 </resources>

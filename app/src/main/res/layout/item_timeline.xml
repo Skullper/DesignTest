@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:paddingBottom="@dimen/small_layout_margin"
+	android:paddingTop="@dimen/layout_margin">
+
+	<View
+		android:id="@+id/indicator_item_timeline"
+		android:layout_width="8dp"
+		android:layout_height="8dp"
+		android:layout_marginStart="@dimen/layout_margin_2x"
+		android:background="@drawable/shape_indicator"
+		app:layout_constraintBottom_toBottomOf="@+id/tv_item_timeline_time"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		tools:backgroundTint="@color/colorGreen"/>
+
+	<TextView
+		android:id="@+id/tv_item_timeline_time"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="@dimen/layout_margin_2x"
+		android:fontFamily="@font/font_medium"
+		android:includeFontPadding="false"
+		android:textColor="@color/colorPrimaryText"
+		android:textSize="34sp"
+		app:layout_constraintStart_toEndOf="@+id/indicator_item_timeline"
+		app:layout_constraintTop_toTopOf="parent"
+		tools:text="4:45"/>
+
+	<android.support.constraint.Guideline
+		android:id="@+id/guideline"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		app:layout_constraintGuide_begin="200dp"/>
+
+	<TextView
+		android:id="@+id/tv_item_timeline_title"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:fontFamily="@font/font_medium"
+		android:textColor="@color/colorPrimaryText"
+		android:textSize="16sp"
+		app:layout_constraintStart_toStartOf="@+id/guideline"
+		app:layout_constraintTop_toTopOf="parent"
+		tools:text="Revice Wireframe"/>
+
+	<TextView
+		android:id="@+id/tv_item_timeline_name"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/small_layout_margin"
+		android:fontFamily="@font/font_light"
+		android:textColor="@color/colorSecondaryText"
+		android:textSize="12sp"
+		app:layout_constraintStart_toStartOf="@+id/guideline"
+		app:layout_constraintTop_toBottomOf="@+id/tv_item_timeline_title"
+		tools:text="Home App"/>
+
+	<LinearLayout
+		android:id="@+id/container_timeline"
+		android:layout_width="0dp"
+		app:layout_constraintWidth_percent="0.5"
+		android:layout_height="56dp"
+		android:layout_marginTop="@dimen/small_layout_margin"
+		android:orientation="horizontal"
+		app:layout_constraintStart_toStartOf="@+id/guideline"
+		app:layout_constraintTop_toBottomOf="@+id/tv_item_timeline_name"/>
+
+</android.support.constraint.ConstraintLayout>
