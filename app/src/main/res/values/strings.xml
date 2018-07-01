@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">DesignTest</string>
+
+	<!--Main-->
+	<string name="main_first_btn">Screen #1</string>
+	<string name="main_sec_btn">Screen #2</string>
+	<string name="main_third_btn">Screen #3</string>
+	<string name="main_fourth_btn">Screen #4</string>
 </resources>
