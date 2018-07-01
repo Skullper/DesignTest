@@ -16,4 +16,8 @@
 	<string name="auth_btn_next">Next</string>
 	<string
 		name="auth_sign_in_label"><![CDATA[Already have an account? <font><b>Sign In</b></font>]]></string>
+
+	<!--Feed-->
+	<string name="feed_likes">%d Likes</string>
+	<string name="feed_comments">%d Comments</string>
 </resources>

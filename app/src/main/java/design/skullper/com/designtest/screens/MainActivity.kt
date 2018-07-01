@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onClick(v: View) = when (v.id) {
         R.id.btn_main_first -> startActivity<AuthActivity>()
-        R.id.btn_main_sec -> TODO()
+        R.id.btn_main_sec -> startActivity<FeedActivity>()
         R.id.btn_main_third -> startActivity<ProfileActivity>()
         R.id.btn_main_fourth -> TODO()
         else -> throw IllegalArgumentException("Wrong button id")

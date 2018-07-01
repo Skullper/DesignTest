@@ -21,7 +21,11 @@
 
 		<activity android:name=".screens.AuthActivity"
 			android:screenOrientation="portrait"/>
+
 		<activity android:name=".screens.ProfileActivity"
+			android:screenOrientation="portrait"/>
+
+		<activity android:name=".screens.FeedActivity"
 			android:screenOrientation="portrait"/>
     </application>
 

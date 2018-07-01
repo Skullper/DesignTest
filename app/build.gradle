@@ -35,6 +35,9 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     //Support
     implementation "com.android.support:appcompat-v7:${versions.support}"
+    implementation "com.android.support:design:${versions.support}"
     implementation "com.android.support.constraint:constraint-layout:${versions.constraint}"
     implementation "org.jetbrains.anko:anko-commons:${versions.anko}"
+    //views
+    implementation 'com.github.vivchar:ViewPagerIndicator:1.1.0'
 }

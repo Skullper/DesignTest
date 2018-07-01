@@ -59,9 +59,7 @@
 		<item name="android:layout_marginStart">@dimen/layout_margin</item>
 	</style>
 
-	<style name="AppSwitchStyle">
-		<item name="colorControlActivated">#e6e600</item>
-    <item name="colorSwitchThumbNormal">#cc0000</item>
+	<style name="TabTextAppearance" parent="TextAppearance.Design.Tab">
+		<item name="textAllCaps">false</item>
 	</style>
-
 </resources>
