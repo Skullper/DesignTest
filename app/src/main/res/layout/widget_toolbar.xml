@@ -5,4 +5,14 @@
 	android:layout_width="match_parent"
 	android:layout_height="?android:attr/actionBarSize"
 	android:elevation="@dimen/elevation_disabled"
-	android:theme="@style/AppToolbar"/>
+	android:theme="@style/AppToolbar">
+
+	<TextView
+		android:id="@+id/tv_toolbar_title"
+		android:layout_width="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:gravity="center_vertical"
+		android:layout_height="match_parent"
+		android:textColor="@color/colorWhite"
+		android:textSize="20sp"/>
+</android.support.v7.widget.Toolbar>

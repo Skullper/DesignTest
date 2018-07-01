@@ -19,6 +19,6 @@
 	<dimen name="auth_title_text_size">24sp</dimen>
 	<dimen name="auth_label_text_size">12sp</dimen>
 
-	<integer name="username_length">50</integer>
+	<integer name="username_length">30</integer>
 
 </resources>

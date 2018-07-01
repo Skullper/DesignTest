@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/colorWindowBg"
+	tools:ignore="HardcodedText">
+	
+	<ImageView
+		android:id="@+id/iv_profile_cover"
+		android:layout_width="match_parent"
+		android:layout_height="256dp"
+		android:scaleType="centerCrop"
+		android:src="@drawable/road"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"/>
+
+	<include
+		android:id="@+id/toolbar"
+		layout="@layout/widget_toolbar"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"/>
+	
+	<ImageView
+		android:id="@+id/iv_profile"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:src="@drawable/ic_pug"
+		app:layout_constraintBottom_toBottomOf="@+id/iv_profile_cover"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"/>
+
+	<TextView
+		android:id="@+id/tv_followers_fb"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="@dimen/layout_margin"
+		android:drawableTop="@drawable/ic_fb"
+		android:fontFamily="@font/font_light"
+		android:text="485 Followers"
+		android:textColor="@color/colorWhite"
+		app:layout_constraintBottom_toBottomOf="@+id/iv_profile"
+		app:layout_constraintEnd_toStartOf="@+id/iv_profile"
+		app:layout_constraintStart_toStartOf="parent"/>
+
+	<TextView
+		android:id="@+id/tv_followers_twitter"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="@dimen/layout_margin"
+		android:drawableTop="@drawable/ic_twitter"
+		android:fontFamily="@font/font_light"
+		android:text="576 Followers"
+		android:textColor="@color/colorWhite"
+		app:layout_constraintBottom_toBottomOf="@+id/iv_profile"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toEndOf="@+id/iv_profile"/>
+
+	<TextView
+		android:id="@+id/tv_profile_username_label"
+		style="@style/ProfileLabelStyle"
+		android:layout_marginTop="@dimen/layout_margin"
+		android:text="@string/auth_label_username"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/iv_profile_cover"/>
+
+	<TextView
+		android:id="@+id/tv_profile_username"
+		style="@style/ProfileTextViewStyle"
+		android:maxLength="@integer/username_length"
+		android:text="Simple username"
+		app:layout_constraintBottom_toBottomOf="@+id/tv_profile_username_label"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintTop_toTopOf="@+id/tv_profile_username_label"
+		app:layout_constraintWidth_percent="0.6"/>
+
+	<TextView
+		android:id="@+id/tv_profile_label_email"
+		style="@style/ProfileLabelStyle"
+		android:layout_marginTop="@dimen/layout_margin_2x"
+		android:text="Email"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/tv_profile_username_label"/>
+
+	<TextView
+		android:id="@+id/tv_profile_email"
+		style="@style/ProfileTextViewStyle"
+		android:maxLength="@integer/username_length"
+		android:text="someunbeliveablylong@email.comasjhdasCHAKRAMOHOTATAB"
+		app:layout_constraintBottom_toBottomOf="@+id/tv_profile_label_email"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintTop_toTopOf="@+id/tv_profile_label_email"
+		app:layout_constraintWidth_percent="0.6"/>
+
+	<TextView
+		android:id="@+id/tv_profile_label_password"
+		style="@style/ProfileLabelStyle"
+		android:layout_marginTop="@dimen/layout_margin_2x"
+		android:text="@string/auth_label_pass"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/tv_profile_label_email"/>
+
+	<TextView
+		android:id="@+id/tv_profile_password"
+		style="@style/ProfileTextViewStyle"
+		android:maxLength="@integer/username_length"
+		android:text="*************"
+		app:layout_constraintBottom_toBottomOf="@+id/tv_profile_label_password"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintTop_toTopOf="@+id/tv_profile_label_password"
+		app:layout_constraintWidth_percent="0.6"/>
+
+	<TextView
+		android:id="@+id/tv_profile_label_fb"
+		style="@style/ProfileLabelStyle"
+		android:layout_marginTop="@dimen/layout_margin_2x"
+		android:text="Facebook"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/tv_profile_label_password"/>
+
+	<android.support.v7.widget.SwitchCompat
+		android:id="@+id/switcher_profile_fb"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="@dimen/layout_margin"
+		android:checked="true"
+		app:layout_constraintBottom_toBottomOf="@+id/tv_profile_label_fb"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintTop_toTopOf="@+id/tv_profile_label_fb"
+		app:thumbTint="@color/selector_thumb_color"
+		app:track="@drawable/shape_track"
+		app:trackTint="@color/selector_track_color"/>
+
+	<TextView
+		android:id="@+id/tv_profile_label_twitter"
+		style="@style/ProfileLabelStyle"
+		android:layout_marginTop="@dimen/layout_margin_2x"
+		android:text="Twitter"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/tv_profile_label_fb"/>
+
+	<android.support.v7.widget.SwitchCompat
+		android:id="@+id/switcher_profile_twitter"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="@dimen/layout_margin"
+		app:layout_constraintBottom_toBottomOf="@+id/tv_profile_label_twitter"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintTop_toTopOf="@+id/tv_profile_label_twitter"
+		app:thumbTint="@color/selector_thumb_color"
+		app:track="@drawable/shape_track"
+		app:trackTint="@color/selector_track_color"/>
+
+	<TextView
+		android:id="@+id/tv_profile_label_google"
+		style="@style/ProfileLabelStyle"
+		android:layout_marginTop="@dimen/layout_margin_2x"
+		android:text="Google+"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/tv_profile_label_twitter"/>
+
+	<TextView
+		android:id="@+id/tv_profile_google"
+		style="@style/ProfileTextViewStyle"
+		android:fontFamily="@font/font_bold"
+		android:text="Connect"
+		app:layout_constraintBottom_toBottomOf="@+id/tv_profile_label_google"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintTop_toTopOf="@+id/tv_profile_label_google"/>
+
+</android.support.constraint.ConstraintLayout>
