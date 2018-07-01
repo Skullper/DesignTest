@@ -6,4 +6,14 @@
 	<string name="main_sec_btn">Screen #2</string>
 	<string name="main_third_btn">Screen #3</string>
 	<string name="main_fourth_btn">Screen #4</string>
+
+	<!--Auth-->
+	<string name="auth_title">Sign Up</string>
+	<string name="auth_label_username">Username</string>
+	<string name="auth_label_email">Email Address</string>
+	<string name="auth_label_pass">Password</string>
+	<string name="auth_label_pass_confirm">Confirm Password</string>
+	<string name="auth_btn_next">Next</string>
+	<string
+		name="auth_sign_in_label"><![CDATA[Already have an account? <font><b>Sign In</b></font>]]></string>
 </resources>

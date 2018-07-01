@@ -1,9 +1,11 @@
-package design.skullper.com.designtest
+package design.skullper.com.designtest.screens
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
+import design.skullper.com.designtest.R
 import kotlinx.android.synthetic.main.activity_main.*
+import org.jetbrains.anko.startActivity
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
@@ -17,7 +19,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     override fun onClick(v: View) = when (v.id) {
-        R.id.btn_main_first -> TODO()
+        R.id.btn_main_first -> startActivity<AuthActivity>()
         R.id.btn_main_sec -> TODO()
         R.id.btn_main_third -> TODO()
         R.id.btn_main_fourth -> TODO()
