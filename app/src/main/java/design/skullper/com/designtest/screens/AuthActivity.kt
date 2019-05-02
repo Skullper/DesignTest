@@ -22,7 +22,7 @@ class AuthActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_arrow_back)
-        supportActionBar?.title = ""
+        supportActionBar?.title = "Some title"
         tv_auth_label_sign_in.text = getString(R.string.auth_sign_in_label).withHtml()
     }
 }
